@@ -1,8 +1,8 @@
 require("dotenv").config();
 const apiKey = process.env.API_KEY;
+// const apiKey = "07d67f84cd34e2452408a52a5a0c1414";
 const baseURL = "https://api.openweathermap.org/data/2.5/weather?";
 
-// const apiKey = "07d67f84cd34e2452408a52a5a0c1414";
 // const cityName = "Toronto";
 // const countryCode = "CA";
 
