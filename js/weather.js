@@ -1,17 +1,6 @@
 require("dotenv").config();
 const apiKey = process.env.API_KEY;
-// const apiKey = "07d67f84cd34e2452408a52a5a0c1414";
 const baseURL = "https://api.openweathermap.org/data/2.5/weather?";
-
-// const cityName = "Toronto";
-// const countryCode = "CA";
-
-// https://api.openweathermap.org/data/2.5/weather?q=Toronto,canada&appid=07d67f84cd34e2452408a52a5a0c1414
-
-// Current Weather Conditions
-// Location
-// Icon (this is an image, look into the API documentation for details)
-// Temperature (in celsius, look into the API documentation for details)
 
 function getWeatherData(cityName, countryCode, resultElementId) {
   const url = `${baseURL}q=${cityName},${countryCode}&appid=${apiKey}&units=metric`;
