@@ -1,3 +1,5 @@
+import axios from "https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js";
+
 const axios = require("axios");
 
 const apiKey = process.env.API_KEY;
