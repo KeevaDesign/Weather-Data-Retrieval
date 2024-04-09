@@ -1,4 +1,10 @@
+
+
 require("dotenv").config();
+
+
+
+
 const apiKey = process.env.API_KEY;
 const baseURL = "https://api.openweathermap.org/data/2.5/weather?";
 
@@ -18,7 +24,7 @@ function displayWeatherData(data, resultElementId) {
   const timezoneOffsetInSeconds = data.timezone;
   const localDate = new Date((data.dt + timezoneOffsetInSeconds) * 1000);
   var iconcode = data.weather[0].icon;
-  var iconurl = "http://openweathermap.org/img/wn/" + iconcode + "@2x.png";
+  var iconurl = "https://openweathermap.org/img/wn/" + iconcode + "@2x.png";
 
   const displayData = `
         <h4>${localDate.toLocaleString()}</h4>
