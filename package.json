@@ -1,4 +1,18 @@
-"scripts": {
-   "build": "npm run-script",
-   "dev": "netlify dev"
- }
+{
+  "name": "netlify-serveless-functions-demo",
+  "version": "1.0.0",
+  "author": "Franklin Ohaegbulam",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run-script",
+    "dev": "netlify dev"
+  },
+  "dependencies": {
+    "axios": "^1.2.0",
+    "dotenv": "^16.0.3",
+    "netlify-lambda": "^2.0.15"
+  },
+  "devDependencies": {
+    "netlify-cli": "^12.2.8"
+  }
+}

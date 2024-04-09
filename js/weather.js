@@ -1,9 +1,5 @@
-
-
 require("dotenv").config();
-
-
-
+const axios = require("axios");
 
 const apiKey = process.env.API_KEY;
 const baseURL = "https://api.openweathermap.org/data/2.5/weather?";
